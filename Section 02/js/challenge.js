@@ -1,5 +1,5 @@
 "use strict";
-console.log("*** Challenges ***")
+console.log("*** Challenges ***");
 /* Challenge #1 */
 const BMI = function (mass, height) {
     return mass / height ** 2;
@@ -43,7 +43,7 @@ const trophy = function () {
         if (avgDolphins > avgKoalas) {
             console.log("Dolphins wins!");
         } else if (avgDolphins === avgKoalas) {
-            console.log("It's a draw!");
+            console.log("Both win!");
         } else if (avgDolphins < avgKoalas) {
             console.log("Koalas wins!");
         }
@@ -67,3 +67,12 @@ trophy();
 avgDolphins = avg(97, 112, 101);
 avgKoalas = avg(109, 95, 106);
 trophy();
+
+/* Challenge #4 */
+let bill = 430;
+let tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+console.log(
+    `The bill was ${bill}, the tip was ${tip}, and the total value ${
+        bill + tip
+    }`
+);
